@@ -127,6 +127,9 @@ header .logo {
 .image {
   margin: 2rem 1.5rem;
   width: 60%;
+  background-image: url("../images/banner.jpg");
+  height: 800px;
+  background-repeat: no-repeat;
 }
 
 .banner .image {
@@ -144,6 +147,8 @@ header .logo {
   padding: 2rem 1.5rem;
   flex: 1;
   width: 60%;
+  background-image: url("../images/information-main.jpg");
+  background-repeat: no-repeat;
 }
 
 
@@ -240,13 +245,9 @@ header .logo {
 
 /* Thesis */
 
-.exhibit h1 {
-  text-align: center;
-}
-
-
-.thesis {
+.exhibit {
   display: flex;
+  flex-direction: row;
 }
 
 
@@ -260,9 +261,8 @@ header .logo {
 
 
 
-.thesis.video {
-    padding: 2rem 1.5rem;
-    flex: 1;
+video {
+
     width: 60%;
 }
 
