@@ -75,7 +75,6 @@ header {
   align-items: center;
   justify-content:space-between;
   height: 4rem;
-  padding: 0 1.5rem;
   position: fixed;
   z-index: 10;
   width: 100%;
@@ -83,7 +82,7 @@ header {
 
 header ul li {
   display: inline;
-  padding: 0 1rem;
+  padding: 0 1.5rem;
 }
 
 header a{
@@ -95,6 +94,7 @@ header .logo {
   display: flex;
   align-items: center;
   height: 2rem;
+  padding-left: 1.5rem;
 }
 
 /* Banner */
@@ -106,17 +106,27 @@ header .logo {
 
 }
 
-.banner.text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.banner img {
+  margin: 2rem 1.5rem;
+  width: 60%;
+
 }
 
 .banner .button {
   padding: 0.5rem 0;
   background-color:#414141;
   text-align: center;
+  width: 95%;
 }
+
+.banner h1 {
+  font-size: 4rem;
+}
+
+.banner h3 {
+  font-size: 2rem;
+}
+
 
 .banner a {
   color:white;
@@ -124,16 +134,14 @@ header .logo {
 }
 
 
-.image {
-  margin: 2rem 1.5rem;
-  width: 60%;
-  background-image: url("../images/banner.jpg");
-  height: 800px;
-  background-repeat: no-repeat;
-}
-
 .banner .image {
   top: 4rem;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /* Main */
@@ -142,13 +150,11 @@ header .logo {
   display: flex;
 }
 
-
 .main.info {
-  padding: 2rem 1.5rem;
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   width: 60%;
-  background-image: url("../images/information-main.jpg");
-  background-repeat: no-repeat;
+  margin: 2rem 1.5rem;
 }
 
 
@@ -183,7 +189,7 @@ header .logo {
 
 .main.boxes {
   border-left: 1px solid lightgrey;
-  padding: 2rem 0;
+  padding: 1rem 0;
   flex:1;
   flex-direction: column;
   width: 40%;
@@ -191,11 +197,11 @@ header .logo {
 
 
 
-.practice p {
+.main.info p {
   padding-top: 1.5rem;
 }
 
-.practice h1 {
+.main.info h1 {
   padding-top: 2rem;
 }
 
@@ -247,23 +253,40 @@ header .logo {
 
 .exhibit {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+}
+.exhibit h1 {
+  text-align: center;
+  padding: 2rem 0;
 }
 
+.urban {
+  width: 60%;
+  margin: 1.5rem;
+}
+
+.content {
+  display: flex;
+}
 
 .thesis.boxes {
-  border-left: 1px solid lightgrey;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   flex:1;
   flex-direction: column;
   width: 40%;
 }
 
+.box.fisma {
+  background-color: #d3d2d2;
+}
 
+.box.now {
+  border-bottom: hidden;
+}
 
 video {
-
-    width: 60%;
+    width: 100%;
 }
 
 
@@ -275,6 +298,7 @@ footer {
   align-items: center;
   padding: 1rem 1.5rem;
   color: grey;
+  border-top: 1px solid lightgrey;
 }
 
 footer a {
