@@ -1,0 +1,233 @@
+/* Font */
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Bold.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Bold.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Bold.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 700;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Medium.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Medium.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Medium.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 400;
+   font-style: normal;
+ }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('fonts/Gotham-Thin.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Gotham-Thin.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('fonts/Gotham-Thin.woff') format('woff'), /* Modern Browsers */
+     url('fonts/Gotham-Thin.ttf')  format('truetype'), /* Safari, Android, iOS */
+     url('fonts/Gotham-Thin.svg#svgFontName') format('svg'); /* Legacy iOS */
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ // For normal
+ .normal {
+   font-weight: 400;
+ }
+
+ // For bold
+ .bold,
+ strong {
+   font-weight: 700;
+ }
+
+ // For thin
+ .light {
+   font-weight: 300;
+ }
+
+
+/* Universal style */
+
+hmtl {
+  font-size: 16px;
+
+}
+
+ body {
+    font-family: 'Gotham';
+    margin: 0;
+    padding: 0;
+ }
+
+ div {
+   display: block;
+ }
+
+/* Header */
+
+header {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  justify-content:space-between;
+  height: 4rem;
+  padding: 0 1.5rem;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+}
+
+header ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+header a{
+  text-decoration: none;
+  color: black;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+}
+
+/* Banner */
+
+.banner {
+  background-color: #d3d2d2;
+  display: flex;
+  padding-top: 4rem;
+
+}
+
+.banner.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner .button {
+  padding: 0.5rem 0;
+  background-color:#414141;
+  text-align: center;
+}
+
+.banner a {
+  color:white;
+  text-decoration: none;
+}
+
+
+.image {
+  margin: 2rem 1.5rem;
+  width: 60%;
+}
+
+.banner .image {
+  top: 4rem;
+}
+
+/* Main */
+
+.main {
+  display: flex;
+}
+
+
+.main.info {
+  padding: 2rem 1.5rem;
+  flex: 1;
+  width: 60%;
+}
+
+
+.box {
+  display: flex;
+  align-items: center;
+
+  border-bottom: 1px solid lightgrey;
+}
+
+.box img {
+  height: auto;
+  padding: 1rem;
+  width: 35%;
+}
+
+.box.text {
+  width: 65%;
+}
+
+.box p {
+  padding: 0.5rem 0;
+}
+
+#more a {
+  color:#4185de;
+  text-decoration: none;
+}
+
+.box.guest {
+  background-color: #d3d2d2;
+}
+
+.main.boxes {
+  border-left: 1px solid lightgrey;
+  padding: 2rem 0;
+  flex:1;
+  flex-direction: column;
+  width: 40%;
+}
+
+
+
+.practice p {
+  padding-top: 1.5rem;
+}
+
+.practice h1 {
+  padding-top: 2rem;
+}
+
+
+/* Courses */
+
+.learning{
+  background-color: #e7e8e9;
+
+}
+
+.learning h1 {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.courses {
+  display: flex;
+  padding: 2rem 2.5rem;
+}
+
+
+
+.course {
+  background-color: white;
+  height: auto;
+  margin: 2rem;
+  width: 50%;
+}
+
+.course p {
+  color:grey;
+  padding: 0.5rem 0;
+}
+
+.course.text {
+  padding: 1rem;
+
+}
