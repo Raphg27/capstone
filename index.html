@@ -18,10 +18,42 @@
         <li> <a href="#">On campus</a></li>
         <li> <a href="#">Online</a></li>
         <li> <a href="#">or companies</a></li>
-        <li> <a href="#">Sign in</a></li>
+        <li> <a href="#popup1">Sign in</a></li>
       </ul>
       </div>
+
+      <div class="nav mobile">
+        <a href="#"><img src="resources/images/ic-logo.svg" alt="logo"></a>
+        <a href="#"><img src="resources/images/ic-on-campus.svg" alt="campus"></a>
+        <a href="#"><img src="resources/images/ic-online.svg" alt="online"></a>
+        <a href="#popup1"><img src="resources/images/ic-login.svg" alt="login"></a>
+      </div>
+
+
+      <div id="popup1" class="overlay">
+      	<div class="popup">
+      		<h2>Sign in</h2>
+      		<a class="close" href="#">&times;</a>
+
+          <a href="#"><button class="loginBtn loginBtn--facebook">
+            Sign in with Facebook
+          </button></a>
+
+          <p> OR </p>
+
+            <form action="/action_page.php">
+              <label for="fname">E-mail address</label>
+              <input type="text" id="fname" name="firstname" placeholder="Enter your email address here">
+
+              <label for="lname">Password</label>
+              <input type="text" id="lname" name="lastname" placeholder="Enter your password here">
+
+              <input type="submit" value="Sign in">
+            </form>
+      	</div>
+      </div>
     </header>
+
 
   <!-- Banner -->
     <div class="banner">
@@ -159,6 +191,16 @@
         </a>
       </div>
     </div>
+
+    <div class="courses-mobile">
+      <h3>Software engineering</h3>
+      <h3>Computer art</h3>
+      <h3>Design</h3>
+      <h3>Data</h3>
+      <h3>Business</h3>
+      <h3>Marketing</h3>
+    </div>
+
   </div>
 
   <!-- Thesis -->
